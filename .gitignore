@@ -1,0 +1,26 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 渲染与构建产物
+node_modules/
+dist/
+_render/output/
+*.mp4
+*.webm
+*.mov
+
+# 模板二进制（合集只收索引与文档，不分发包体）
+*.motion
+*.zip
+
+# 凭据与本地信息
+.env
+*.key.json
+personal/
+专属信息/
+
+# 临时文件
+*_tmp
+*_draft

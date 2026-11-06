@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "collection-1.0",
+  "generatedAt": "2026-11-07",
+  "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。",
+  "counts": {
+    "total": 4,
+    "byStatus": {
+      "published": 0,
+      "in-review": 1,
+      "draft-private": 0,
+      "shelved": 3
+    },
+    "publicDownloadable": 0
+  },
+  "templates": [
+    {
+      "id": "dotmatrix-portrait-v1",
+      "name": "点阵肖像（DotMatrix Portrait）",
+      "version": "1.0.0",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 13,
+      "route": "html-canvas",
+      "source": "imitation",
+      "status": "in-review",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "审核中",
+        "url": null
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": 390,
+        "deterministic": true
+      },
+      "doc": "docs/dotmatrix-portrait.md",
+      "notes": "三段人像 → 粒子散开 → 标题汇聚；改时长需同步改时间点"
+    },
+    {
+      "id": "imitation-light-ribbon-word-v1",
+      "name": "光带成字（仿制）",
+      "version": "1.0.0",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 10,
+      "route": "html-canvas",
+      "source": "imitation",
+      "status": "shelved",
+      "publish": {
+        "platform": null,
+        "state": "未公开发布",
+        "url": null
+      },
+      "license": "自制实现，未对外发布",
+      "evidence": {
+        "level": "video",
+        "frames": 300,
+        "deterministic": true
+      },
+      "doc": "docs/light-ribbon-word.md",
+      "notes": "光带细结构、柔光晕、散开云团三项未还原；不提供下载"
+    },
+    {
+      "id": "seaside-portrait-vertical",
+      "name": "海边电影感·竖屏",
+      "version": "1.2",
+      "orientation": "9:16",
+      "resolution": null,
+      "fps": null,
+      "durationSec": null,
+      "route": "directory",
+      "source": "personal-original",
+      "status": "shelved",
+      "publish": {
+        "platform": null,
+        "state": "未公开发布",
+        "url": null
+      },
+      "license": "自制实现，未对外发布",
+      "evidence": {
+        "level": "video",
+        "frames": null,
+        "deterministic": null
+      },
+      "doc": "docs/seaside-portrait.md",
+      "notes": "目录型网页模板；暂不公开"
+    },
+    {
+      "id": "board-writing-english-v2",
+      "name": "板书讲解·英语句式（仿制）",
+      "version": "2.0.0",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 57.4,
+      "route": "html-canvas",
+      "source": "imitation",
+      "status": "shelved",
+      "publish": {
+        "platform": null,
+        "state": "未公开发布",
+        "url": null
+      },
+      "license": "自制实现，未对外发布",
+      "evidence": {
+        "level": "video",
+        "frames": 1722,
+        "deterministic": true
+      },
+      "doc": "docs/board-writing-english.md",
+      "notes": "白板手绘风 8 段讲解；内容需按平台审核口径复评后再定"
+    }
+  ]
+}
