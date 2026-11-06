@@ -4,6 +4,10 @@
 
 本仓库**只承载索引与文档**，不分发模板二进制、不含账号凭据、不含本机路径。模板本体通过 MotionGit 平台获取。
 
+![点阵肖像 · 结尾标题帧](docs/assets/preview-title.jpg)
+
+> 上图为点阵肖像 v1.0.0 成片的结尾标题帧（「点的轮廓 / OUTLINE OF DOTS」）。人像帧涉及示例人物肖像，不在公开仓展示。
+
 ---
 
 ## 收录什么
@@ -50,6 +54,8 @@
 ├── README.md              本文件：合集入口与状态口径
 ├── catalog.json           机器可读索引（与上方表格同源）
 ├── docs/
+│   ├── assets/
+│   │   └── preview-title.jpg     点阵肖像结尾标题帧（公开预览）
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议
 │   ├── light-ribbon-word.md     光带成字仿制：还原度与已知差距
 │   ├── seaside-portrait.md      海边电影感·竖屏

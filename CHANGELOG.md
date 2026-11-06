@@ -2,6 +2,9 @@
 
 ## 2026-11-07
 
+- 新增 `docs/assets/preview-title.jpg`（1600×824，280 KB）：点阵肖像 v1.0.0 成片结尾标题帧，作为 README 与说明页预览
+  - 该帧已裁掉原片底部/右侧渲染视口残留（画布 1920×1080 实际只有 1899×982 有内容）
+  - 人像帧涉及示例人物肖像，不放入公开仓
 - 合集仓库建立，收录 4 条自有模板登记：
   - `dotmatrix-portrait-v1` 点阵肖像 — 审核中（MotionGit）
   - `imitation-light-ribbon-word-v1` 光带成字（仿制） — 本地留存
