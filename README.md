@@ -20,7 +20,7 @@
 
 | 模板 | 模板 id | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|
-| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 审核中（MotionGit） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
+| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 已发布（MotionGit，下载 23） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
 
 ## 暂未公开发布
 

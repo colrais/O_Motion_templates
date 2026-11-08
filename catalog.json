@@ -5,8 +5,8 @@
   "counts": {
     "total": 4,
     "byStatus": {
-      "published": 0,
-      "in-review": 1,
+      "published": 1,
+      "in-review": 0,
       "draft-private": 0,
       "shelved": 3
     },
@@ -23,11 +23,12 @@
       "durationSec": 13,
       "route": "html-canvas",
       "source": "imitation",
-      "status": "in-review",
+      "status": "published",
       "publish": {
         "platform": "MotionGit",
-        "state": "审核中",
-        "url": null
+        "state": "已发布",
+        "url": null,
+        "downloads": 23
       },
       "license": "MIT",
       "evidence": {

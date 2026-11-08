@@ -1,5 +1,10 @@
 # 变更记录
 
+## 2026-11-08
+
+- `dotmatrix-portrait-v1` 点阵肖像在 MotionGit 审核通过，状态由 `in-review` 改为 `published`，下载量 23；`publish.url` 暂缺（未取得具体链接），保持 null
+- 同步更新 `catalog.json`（counts：published 1 / in-review 0）、README 模板表与 `docs/dotmatrix-portrait.md`
+
 ## 2026-11-07
 
 - 新增 `docs/assets/preview-title.jpg`（1600×824，280 KB）：点阵肖像 v1.0.0 成片结尾标题帧，作为 README 与说明页预览
