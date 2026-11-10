@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-11-10
+
+- 巡检确认 `dotmatrix-portrait-v1` 在 MotionGit 已公开发布，作品页 `https://motiongit.com/@fangcs/dotmatrix-portrait-v1` 实测 HTTP 200
+- 补齐 `publish.url`（此前为 null）；下载量按当日实测 23 → 45；`counts.publicDownloadable` 0 → 1
+- 同步 README 模板表状态列、`docs/dotmatrix-portrait.md` 状态与获取链接
+
 ## 2026-11-08
 
 - `dotmatrix-portrait-v1` 点阵肖像在 MotionGit 审核通过，状态由 `in-review` 改为 `published`，下载量 23；`publish.url` 暂缺（未取得具体链接），保持 null
