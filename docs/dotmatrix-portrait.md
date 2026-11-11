@@ -10,7 +10,7 @@
 | 画幅 / 帧率 / 时长 | 1920×1080 / 30 fps / 13 s（默认） |
 | 许可 | MIT |
 | 网络依赖 | 无（点阵、粒子、字体全部本地计算） |
-| 状态 | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载量 45） |
+| 状态 | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载量 57） |
 | 确定性 | 固定随机种子，同一参数 + 同一时间点多次渲染哈希一致 |
 
 ![结尾标题帧](assets/preview-title.jpg)

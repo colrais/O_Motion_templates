@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-11-11
+
+- 巡检实测作品页 `https://motiongit.com/@fangcs/dotmatrix-portrait-v1` 可访问，下载量 45 → **57**
+- 修正一处判据：`motiongit.com/fangcs` 个人页的模板列表由前端 JS 渲染，静态抓取显示「0 templates」属假象，**不能作为发布状态判据**；判据以作品页可访问 + 页面下载数 + 重载版本为准
+- 同步 `catalog.json`（downloads 57 / generatedAt 2026-11-11）、README 模板表与 `docs/dotmatrix-portrait.md`
+
 ## 2026-11-10
 
 - 巡检确认 `dotmatrix-portrait-v1` 在 MotionGit 已公开发布，作品页 `https://motiongit.com/@fangcs/dotmatrix-portrait-v1` 实测 HTTP 200
