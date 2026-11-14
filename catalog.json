@@ -1,6 +1,6 @@
 {
   "schemaVersion": "collection-1.0",
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-14",
   "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。",
   "counts": {
     "total": 4,
@@ -28,7 +28,7 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/dotmatrix-portrait-v1",
-        "downloads": 57
+        "downloads": 87
       },
       "license": "MIT",
       "evidence": {

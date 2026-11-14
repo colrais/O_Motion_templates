@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-11-14
+
+- 巡检实测作品页可访问，下载量 57 → **87**（页面"关于"区现抓，更新于 7 天前）
+- 同步 `catalog.json`（downloads 87 / generatedAt 2026-11-14）、README 模板表与 `docs/dotmatrix-portrait.md`
+- 暗场极客 `geek-dark-talk-v1` 已在 MotionGit 提交 v1.0.1 审核（templateId 1002 / releaseId 1230）；**审核通过前不登记本仓**，通过后再补条目并更新 counts
+
 ## 2026-11-11
 
 - 巡检实测作品页 `https://motiongit.com/@fangcs/dotmatrix-portrait-v1` 可访问，下载量 45 → **57**
