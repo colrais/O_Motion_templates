@@ -20,8 +20,8 @@
 
 | 模板 | 模板 id | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|
-| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载 87） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
-| 暗场极客知识口播 | `geek-dark-talk-v1` | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，下载 33） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
+| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载 91） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
+| 暗场极客知识口播 | `geek-dark-talk-v1` | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，下载 4） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
 
 ## 暂未公开发布
 
