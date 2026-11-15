@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-11-15
+
+- 暗场极客 `geek-dark-talk-v1` 审核通过并公开，实抓作品页复核（HTTP 200，v1.0.1，下载 **33**，更新于 12 小时前），按 11-14 约定补登本仓
+- 新增 `docs/geek-dark-talk.md`；`catalog.json` 增条目并更新 counts（total 4→5、published 1→2、publicDownloadable 1→2、generatedAt 2026-11-15）
+- README 模板表与仓库结构同步补行
+
 ## 2026-11-14
 
 - 巡检实测作品页可访问，下载量 57 → **87**（页面"关于"区现抓，更新于 7 天前）

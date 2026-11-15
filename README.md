@@ -21,6 +21,7 @@
 | 模板 | 模板 id | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|
 | 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载 87） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
+| 暗场极客知识口播 | `geek-dark-talk-v1` | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，下载 33） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
 
 ## 暂未公开发布
 
@@ -57,6 +58,7 @@
 │   ├── assets/
 │   │   └── preview-title.jpg     点阵肖像结尾标题帧（公开预览）
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议
+│   ├── geek-dark-talk.md        暗场极客知识口播：参数表、角色映射、渲染命令
 │   ├── light-ribbon-word.md     光带成字仿制：还原度与已知差距
 │   ├── seaside-portrait.md      海边电影感·竖屏
 │   ├── board-writing-english.md 板书讲解·英语句式

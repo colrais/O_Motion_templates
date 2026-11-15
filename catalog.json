@@ -1,16 +1,16 @@
 {
   "schemaVersion": "collection-1.0",
-  "generatedAt": "2026-11-14",
+  "generatedAt": "2026-11-15",
   "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。",
   "counts": {
-    "total": 4,
+    "total": 5,
     "byStatus": {
-      "published": 1,
+      "published": 2,
       "in-review": 0,
       "draft-private": 0,
       "shelved": 3
     },
-    "publicDownloadable": 1
+    "publicDownloadable": 2
   },
   "templates": [
     {
@@ -38,6 +38,32 @@
       },
       "doc": "docs/dotmatrix-portrait.md",
       "notes": "三段人像 → 粒子散开 → 标题汇聚；改时长需同步改时间点"
+    },
+    {
+      "id": "geek-dark-talk-v1",
+      "name": "暗场极客知识口播",
+      "version": "1.0.1",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 60,
+      "durationSec": 268.9,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/geek-dark-talk-v1",
+        "downloads": 33
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": null,
+        "deterministic": true
+      },
+      "doc": "docs/geek-dark-talk.md",
+      "notes": "干净室自主实现；只给结构化 sections，语义层自动映射 12 类角色镜头；画面全程序化生成无外部图片；时长按内容伸缩（默认样例 4m29s）"
     },
     {
       "id": "imitation-light-ribbon-word-v1",
