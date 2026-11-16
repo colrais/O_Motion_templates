@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-11-16
+
+- 3D粒子以新身份 `particle-form-morph-v1` 重发并提交审核：旧身份 `particle-form-morph-imitation-v1` 把旧来源词写进了平台固定地址，升版本无法修改，只能下架后换新身份；旧身份已下架留档、号位不回收
+- 补登 `catalog.json` 新条目（status `in-review`，counts total 5→6、in-review 0→1、generatedAt 2026-11-16），README 模板表同步加行
+- 新身份来源按四档口径记为成片参照，许可 MIT
+
 ## 2026-11-15（巡检二次复核）
 
 - 巡检实测两支已发布作品页可访问；下载量按新判据回写：点阵肖像 87 → **91**，暗场极客 33 → **4**

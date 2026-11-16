@@ -22,6 +22,7 @@
 |---|---|---|---|---|---|---|
 | 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 16:9 | 13 s | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载 91） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
 | 暗场极客知识口播 | `geek-dark-talk-v1` | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，下载 4） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
+| 3D粒子形变 | `particle-form-morph-v1` | 16:9 | 18 s（默认，6–30 s 可调） | 审核中（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)） | MIT | 八个三维粒子形状连续形变；旧身份含旧来源词已下架，以此新身份重发 |
 
 ## 暂未公开发布
 
