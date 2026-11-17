@@ -33,9 +33,9 @@
 
 | 模板 | 模板 id | 来源性质 | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|---|
-| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 成片参照 | 16:9 | 13 s | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，v1.1.0，下载 106） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
-| 暗场极客知识口播 | `geek-dark-talk-v1` | 成片参照 | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，v1.0.1，下载 14） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
-| 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 审核中（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
+| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 成片参照 | 16:9 | 13 s（8–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，v1.5.0，下载 119） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
+| 暗场极客知识口播 | `geek-dark-talk-v1` | 成片参照 | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，v1.3.1，下载 21） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
+| 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)，v1.3.1，下载 4） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
 
 ## 暂未公开发布
 
@@ -55,6 +55,8 @@
 | `in-review` | 已提交 MotionGit 审核，未通过前不对外承诺可用性 |
 | `draft-private` | 本地与私有仓已完成验收，未提交公开平台 |
 | `shelved` | 实测可跑但暂不对外提供（质量、定位或授权原因） |
+
+> 版本可见性：平台上提交过的历史版本，**只有曾发布成功的版本对其他用户可见**；审核中或审核通过但未对外发布的版本仅作者自己能看到。因此作品页显示的版本号可能跳号（中间版本不对外）。
 
 ## 快速开始
 

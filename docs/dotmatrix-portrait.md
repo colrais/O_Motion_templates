@@ -5,13 +5,13 @@
 | 项 | 值 |
 |---|---|
 | 模板 id | `dotmatrix-portrait-v1` |
-| 版本 | v1.1.0（线上生效） |
+| 版本 | v1.5.0（线上生效） |
 | 来源性质 | 成片参照 |
 | 运行时 | `html-canvas/1` |
-| 画幅 / 帧率 / 时长 | 1920×1080 / 30 fps / 13 s（默认） |
+| 画幅 / 帧率 / 时长 | 1920×1080 / 30 fps / 13 s（默认，8–30 s 可调） |
 | 许可 | MIT |
 | 网络依赖 | 无（点阵、粒子、字体全部本地计算） |
-| 状态 | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载量 106，2026-11-16 实抓复核） |
+| 状态 | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，下载量 119，2026-11-17 实抓复核） |
 | 确定性 | 固定随机种子，同一参数 + 同一时间点多次渲染哈希一致 |
 
 ![结尾标题帧](assets/preview-title.jpg)

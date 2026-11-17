@@ -1,22 +1,22 @@
 {
   "schemaVersion": "collection-1.0",
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-17",
   "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。",
   "counts": {
     "total": 6,
     "byStatus": {
-      "published": 2,
-      "in-review": 1,
+      "published": 3,
+      "in-review": 0,
       "draft-private": 0,
       "shelved": 3
     },
-    "publicDownloadable": 2
+    "publicDownloadable": 3
   },
   "templates": [
     {
       "id": "dotmatrix-portrait-v1",
       "name": "点阵肖像（DotMatrix Portrait）",
-      "version": "1.1.0",
+      "version": "1.5.0",
       "orientation": "16:9",
       "resolution": "1920x1080",
       "fps": 30,
@@ -28,7 +28,7 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/dotmatrix-portrait-v1",
-        "downloads": 106
+        "downloads": 119
       },
       "license": "MIT",
       "evidence": {
@@ -42,7 +42,7 @@
     {
       "id": "geek-dark-talk-v1",
       "name": "暗场极客知识口播",
-      "version": "1.0.1",
+      "version": "1.3.1",
       "orientation": "16:9",
       "resolution": "1920x1080",
       "fps": 60,
@@ -54,7 +54,7 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/geek-dark-talk-v1",
-        "downloads": 14
+        "downloads": 21
       },
       "license": "MIT",
       "evidence": {
@@ -150,12 +150,12 @@
       "durationSec": 18,
       "route": "shot-kit",
       "source": "reference-film",
-      "status": "in-review",
+      "status": "published",
       "publish": {
         "platform": "MotionGit",
-        "state": "审核中",
+        "state": "已发布",
         "url": "https://motiongit.com/@fangcs/particle-form-morph-v1",
-        "downloads": 0
+        "downloads": 4
       },
       "license": "MIT",
       "evidence": {
