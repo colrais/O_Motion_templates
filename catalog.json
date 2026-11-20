@@ -1,14 +1,14 @@
 {
   "schemaVersion": "collection-1.0",
-  "generatedAt": "2026-11-17",
-  "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。",
+  "generatedAt": "2026-11-21",
+  "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。draft-private = 资产层存在但未对外发布的私密模板，仅作可发现性登记。",
   "counts": {
-    "total": 6,
+    "total": 7,
     "byStatus": {
       "published": 3,
       "in-review": 0,
-      "draft-private": 0,
-      "shelved": 3
+      "draft-private": 2,
+      "shelved": 2
     },
     "publicDownloadable": 3
   },
@@ -37,7 +37,8 @@
         "deterministic": true
       },
       "doc": "docs/dotmatrix-portrait.md",
-      "notes": "三段人像 → 粒子散开 → 标题汇聚；改时长需同步改时间点"
+      "notes": "三段人像 → 粒子散开 → 标题汇聚；改时长需同步改时间点",
+      "code": "0202010001"
     },
     {
       "id": "geek-dark-talk-v1",
@@ -63,12 +64,13 @@
         "deterministic": true
       },
       "doc": "docs/geek-dark-talk.md",
-      "notes": "干净室自主实现；只给结构化 sections，语义层自动映射 12 类角色镜头；画面全程序化生成无外部图片；时长按内容伸缩（默认样例 4m29s）"
+      "notes": "干净室自主实现；只给结构化 sections，语义层自动映射 12 类角色镜头；画面全程序化生成无外部图片；时长按内容伸缩（默认样例 4m29s）",
+      "code": "0201010001"
     },
     {
       "id": "light-ribbon-word-v1",
       "name": "光带成字",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "orientation": "16:9",
       "resolution": "1920x1080",
       "fps": 30,
@@ -88,7 +90,8 @@
         "deterministic": true
       },
       "doc": "docs/light-ribbon-word.md",
-      "notes": "光带细结构、柔光晕、散开云团三项未还原；不提供下载"
+      "notes": "1.0.1：光带交织/分叉、成字柔光晕、散开云团三项已还原（默认光晕按参考片 7.5s 帧实测校准）；仍未对外发布、不提供下载",
+      "code": "0308010001"
     },
     {
       "id": "seaside-portrait-vertical",
@@ -113,32 +116,8 @@
         "deterministic": null
       },
       "doc": "docs/seaside-portrait.md",
-      "notes": "目录型网页模板；暂不公开"
-    },
-    {
-      "id": "board-writing-english-v2",
-      "name": "板书讲解·英语句式",
-      "version": "2.0.0",
-      "orientation": "16:9",
-      "resolution": "1920x1080",
-      "fps": 30,
-      "durationSec": 57.4,
-      "route": "html-canvas",
-      "source": "reference-film",
-      "status": "shelved",
-      "publish": {
-        "platform": null,
-        "state": "未公开发布",
-        "url": null
-      },
-      "license": "自制实现，未对外发布",
-      "evidence": {
-        "level": "video",
-        "frames": 1722,
-        "deterministic": true
-      },
-      "doc": "docs/board-writing-english.md",
-      "notes": "白板手绘风 8 段讲解；内容需按平台审核口径复评后再定"
+      "notes": "目录型网页模板；暂不公开",
+      "code": "0105020001"
     },
     {
       "id": "particle-form-morph-v1",
@@ -164,7 +143,60 @@
         "deterministic": true
       },
       "doc": null,
-      "notes": "八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发"
+      "notes": "八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发",
+      "code": "0203010001"
+    },
+    {
+      "id": "0106010001-kindergarten-daily",
+      "code": "0106010001",
+      "name": "幼儿园日常宣传·综合叙事",
+      "version": "0.1.0",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 59.7,
+      "route": "node-cdp",
+      "source": "personal-original",
+      "status": "draft-private",
+      "publish": {
+        "platform": null,
+        "state": "未公开发布",
+        "url": null
+      },
+      "license": "自制实现，未对外发布（private）",
+      "evidence": {
+        "level": "video",
+        "frames": 1791,
+        "deterministic": true
+      },
+      "doc": null,
+      "notes": "内容驱动综合叙事模板，自动生成片头片尾/转场/字幕/风格层；自研 motion-template/1 为内部包，另备 motiongit 适配 target（inspect 7/7 已过），本期不上架"
+    },
+    {
+      "id": "chemistry-middle-courseware-v1",
+      "code": "0104010001",
+      "name": "化学课件·中学",
+      "version": "0",
+      "orientation": "16:9",
+      "resolution": null,
+      "fps": null,
+      "durationSec": null,
+      "route": "directory",
+      "source": "personal-original",
+      "status": "draft-private",
+      "publish": {
+        "platform": null,
+        "state": "未公开发布",
+        "url": null
+      },
+      "license": "自制实现，未对外发布（private）",
+      "evidence": {
+        "level": "none",
+        "frames": null,
+        "deterministic": null
+      },
+      "doc": null,
+      "notes": "目录型 v0，尚无 motion.json 清单；身份登记用，未达收录标准"
     }
   ]
 }
