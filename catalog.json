@@ -1,7 +1,7 @@
 {
   "schemaVersion": "collection-1.0",
   "generatedAt": "2026-11-21",
-  "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。draft-private = 资产层存在但未对外发布的私密模板，仅作可发现性登记。",
+  "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。draft-private = 资产层存在但未对外发布的私密模板，仅作可发现性登记。下载数两个字段不可混用：publish.downloads 为页面抓取时点值（见 publish.downloadsObservedAt，历史口径未单独标注），analytics30d 为作者后台作品数据页的近 30 天窗口值（window/asOf/downloads/pageViews），30 天 ≠ 累计。",
   "counts": {
     "total": 11,
     "byStatus": {
@@ -28,7 +28,8 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/dotmatrix-portrait-v1",
-        "downloads": 119
+        "downloads": 119,
+        "downloadsObservedAt": "2026-11-17"
       },
       "license": "MIT",
       "evidence": {
@@ -62,7 +63,8 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/geek-dark-talk-v1",
-        "downloads": 21
+        "downloads": 21,
+        "downloadsObservedAt": "2026-11-17"
       },
       "license": "MIT",
       "evidence": {
@@ -148,7 +150,8 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/particle-form-morph-v1",
-        "downloads": 4
+        "downloads": 4,
+        "downloadsObservedAt": "2026-11-17"
       },
       "license": "MIT",
       "evidence": {
@@ -339,7 +342,8 @@
         "platform": "MotionGit",
         "state": "已发布",
         "url": "https://motiongit.com/@fangcs/end-card-cta",
-        "downloads": 22
+        "downloads": 22,
+        "downloadsObservedAt": "2026-11-20"
       },
       "license": "MIT",
       "evidence": {
