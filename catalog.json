@@ -3,14 +3,14 @@
   "generatedAt": "2026-11-21",
   "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。draft-private = 资产层存在但未对外发布的私密模板，仅作可发现性登记。",
   "counts": {
-    "total": 7,
+    "total": 11,
     "byStatus": {
-      "published": 3,
+      "published": 7,
       "in-review": 0,
       "draft-private": 2,
       "shelved": 2
     },
-    "publicDownloadable": 3
+    "publicDownloadable": 7
   },
   "templates": [
     {
@@ -197,6 +197,118 @@
       },
       "doc": null,
       "notes": "目录型 v0，尚无 motion.json 清单；身份登记用，未达收录标准"
+    },
+    {
+      "id": "cartoon-scribble-open",
+      "name": "卡通涂鸦片头（Cartoon Scribble Open）",
+      "version": "1.0.2",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 5,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/cartoon-scribble-open",
+        "downloads": null
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": 150,
+        "deterministic": true
+      },
+      "doc": "docs/cartoon-scribble-open.md",
+      "notes": "动效片段·开场（placement=opening）；黄色笔刷＋逐字彩色弹入＋四件手绘装饰＋程序音效；固定 5s、透明背景；下载量未采集",
+      "code": "0107010001",
+      "contentType": "motion-fragment"
+    },
+    {
+      "id": "ink-brush-title",
+      "name": "水墨书法标题卡（Ink Brush Title）",
+      "version": "1.0.2",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 3,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/ink-brush-title",
+        "downloads": null
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": 90,
+        "deterministic": true
+      },
+      "doc": "docs/ink-brush-title.md",
+      "notes": "动效片段·章节（placement=chapter）；墨笔横扫＋书法大字遮罩渐显＋朱砂线＋印章；固定 3s、透明背景；已知缺陷：font 为空时主标题退回小字号（1.0.3 候选）",
+      "code": "0107020001",
+      "contentType": "motion-fragment"
+    },
+    {
+      "id": "name-plaque-card",
+      "name": "竖排姓名身份卡（Name Plaque Card）",
+      "version": "1.0.0",
+      "orientation": "9:16",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "durationSec": 3,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/name-plaque-card",
+        "downloads": null
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": 90,
+        "deterministic": true
+      },
+      "doc": "docs/name-plaque-card.md",
+      "notes": "动效片段·插入（placement=insert）；双线框双向描边＋竖排姓名逐字落下＋朱印＋微光；固定 3s、竖屏、透明背景",
+      "code": "0107030001",
+      "contentType": "motion-fragment"
+    },
+    {
+      "id": "end-card-cta",
+      "name": "片尾关注卡（End Card CTA）",
+      "version": "1.1.0",
+      "orientation": "1:1",
+      "resolution": "1080x1080",
+      "fps": 30,
+      "durationSec": 3,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/end-card-cta",
+        "downloads": 22
+      },
+      "license": "MIT",
+      "evidence": {
+        "level": "video",
+        "frames": 90,
+        "deterministic": true
+      },
+      "doc": "docs/end-card-cta.md",
+      "notes": "动效片段·片尾（placement=ending）；圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；固定 3s、方形 1:1、透明背景；v1.1.0 为 1:1 适配版",
+      "code": "0107040001",
+      "contentType": "motion-fragment"
     }
   ]
 }

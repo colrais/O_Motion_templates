@@ -31,21 +31,37 @@
 
 ## 模板一览
 
-| 模板 | 模板 id | 来源性质 | 画幅 | 时长 | 状态 | 许可 | 说明 |
-|---|---|---|---|---|---|---|---|
-| 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 成片参照 | 16:9 | 13 s（8–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，v1.5.0，下载 119） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
-| 暗场极客知识口播 | `geek-dark-talk-v1` | 成片参照 | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，v1.3.1，下载 21） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
-| 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)，v1.3.1，下载 4） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
+| 编号 | 模板 | 模板 id | 来源性质 | 画幅 | 时长 | 状态 | 许可 | 说明 |
+|---|---|---|---|---|---|---|---|---|
+| `0202010001` | 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 成片参照 | 16:9 | 13 s（8–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，v1.5.0，下载 119） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
+| `0201010001` | 暗场极客知识口播 | `geek-dark-talk-v1` | 成片参照 | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，v1.3.1，下载 21） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
+| `0203010001` | 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)，v1.3.1，下载 4） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
+
+### 动效片段（motion-fragment）
+
+以下四支为**叠加用的动效片段**（非完整模板）：固定时长、透明背景、可叠到任意画面上。
+
+| 编号 | 模板 | 模板 id | 位置 | 画幅 | 时长 | 状态 | 许可 | 说明 |
+|---|---|---|---|---|---|---|---|---|
+| `0107010001` | 卡通涂鸦片头（Cartoon Scribble Open） | `cartoon-scribble-open` | 开场 | 16:9 | 5 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/cartoon-scribble-open)，v1.0.2） | MIT | 黄色笔刷＋逐字彩色弹入＋四件手绘装饰；见 [docs/cartoon-scribble-open.md](docs/cartoon-scribble-open.md) |
+| `0107020001` | 水墨书法标题卡（Ink Brush Title） | `ink-brush-title` | 章节 | 16:9 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/ink-brush-title)，v1.0.2） | MIT | 墨笔横扫＋书法大字＋朱砂线＋印章；**已知缺陷：font 为空时主标题退回小字号**；见 [docs/ink-brush-title.md](docs/ink-brush-title.md) |
+| `0107030001` | 竖排姓名身份卡（Name Plaque Card） | `name-plaque-card` | 插入 | 9:16 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/name-plaque-card)，v1.0.0） | MIT | 双线框双向描边＋竖排姓名逐字落下＋朱印；见 [docs/name-plaque-card.md](docs/name-plaque-card.md) |
+| `0107040001` | 片尾关注卡（End Card CTA） | `end-card-cta` | 片尾 | 1:1 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/end-card-cta)，v1.1.0，下载 22） | MIT | 圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；v1.1.0 为 1:1 适配版；见 [docs/end-card-cta.md](docs/end-card-cta.md) |
+
+> 片段的三支下载量尚未采集（页面只显示已发布状态），不填估算值。
 
 ## 暂未公开发布
 
 以下为本项目自主实现、已完成本地验收但**暂不对外提供**的模板，仅作登记，不提供源码与预览：
 
-| 模板 | 形态 | 来源性质 | 状态 | 备注 |
-|---|---|---|---|---|
-| 光带成字 | `.motion` / html-canvas | 契约参照 | 本地留存 | 还原度存在已知差距，见 [docs/light-ribbon-word.md](docs/light-ribbon-word.md) |
-| 海边电影感·竖屏 | 目录型网页模板 v1.2 | 原创 | 本地留存 | 暂不公开 |
-| 板书讲解·英语句式 | `.motion` / html-canvas | 成片参照 | 本地留存 | 暂不公开 |
+| 编号 | 模板 | 模板 id | 形态 | 来源性质 | 状态 | 备注 |
+|---|---|---|---|---|---|---|
+| `0308010001` | 光带成字 | `light-ribbon-word-v1` | `.motion` / html-canvas | 契约参照 | shelved | 还原度存在已知差距，见 [docs/light-ribbon-word.md](docs/light-ribbon-word.md) |
+| `0105020001` | 海边电影感·竖屏 | `template-seaside-portrait-vertical` | 目录型网页模板 v1.2 | 原创 | shelved | 暂不公开 |
+| `0106010001` | 幼儿园日常宣传·综合叙事 | `0106010001-kindergarten-daily` | 自研 `motion-template/1` / node-cdp（含 motiongit 适配 target） | 原创 | draft-private | 测试验收，本期不上架；官方 inspect 7/7 已过 |
+| `0104010001` | 化学课件·中学 | `chemistry-middle-courseware-v1` | 目录型 v0 | 原创 | draft-private | 尚无 manifest，未达收录标准 |
+
+> 编号为资产层 `O_Motion_template_<编号>` 私密仓的追溯主键（详见《项目配置指令》§三），仅作双向定位，不含下载凭据。
 
 ## 状态口径
 

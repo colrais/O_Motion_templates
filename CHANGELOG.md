@@ -1,5 +1,15 @@
 # 变更记录
 
+## 2026-11-21
+
+- **登记 4 支动效片段（新增「动效片段」分组）**：`cartoon-scribble-open`（卡通涂鸦片头，v1.0.2）、`ink-brush-title`（水墨书法标题卡，v1.0.2）、`name-plaque-card`（竖排姓名身份卡，v1.0.0）、`end-card-cta`（片尾关注卡，v1.1.0）四条 `published` 条目，各带编号 `0107010001`–`0107040001`、`contentType: motion-fragment`、placement（opening/chapter/insert/ending）与独立说明页。本体在资产层私密仓，合集只登记能力与获取方式。
+- **如实标注**：水墨书法标题卡的「font 为空时主标题退回小字号」缺陷写进条目 notes 与说明页；三支片段下载量未采集，不填估算值；片尾关注卡沿用 2026-11-20 回读的 22 次下载。
+- counts：total 7→11，`published` 3→7，`publicDownloadable` 3→7；`generatedAt` 2026-11-21。
+- **补登记资产层 2 支**：新增 `0106010001`（幼儿园日常宣传·综合叙事，`0106010001-kindergarten-daily` v0.1.0，自研 node-cdp 含 motiongit 适配，官方 inspect 7/7 已过，本期不上架）与 `0104010001`（化学课件·中学，`chemistry-middle-courseware-v1` v0 目录型）两支 `draft-private` 条目，仅作可发现性登记，不分发本体。
+- **清理虚条**：删除 `board-writing-english-v2`（v2.0.0）——该 id/版本在全库无对应资产仓，属误登记；板书模板目前只在主项目工作区（`board-lecture-english-patterns-v1` v1.0.0），待独立成仓后再回到合集，`docs/board-writing-english.md` 暂保留。
+- **加编号追溯列**：`catalog.json` 每条补 `code` 字段（10 位资产编号），README「模板一览 / 暂未公开发布」两表加「编号」列，与《项目配置指令》§三 子工程登记表、主项目 `模板库清单.md §一.5` 三处同源。
+- counts：total 6→7，`draft-private` 0→2，`shelved` 3→2；`generatedAt` 2026-11-21。
+
 ## 2026-11-17
 
 - **两支升级公告过审、粒子新身份过审**：点阵肖像 v1.5.0、暗场极客 v1.3.1、3D粒子形变（新身份首次发布）v1.3.1 均已通过审核并对其他用户可见
