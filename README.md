@@ -43,12 +43,12 @@
 
 | 编号 | 模板 | 模板 id | 位置 | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|---|---|
-| `0107010001` | 卡通涂鸦片头（Cartoon Scribble Open） | `cartoon-scribble-open` | 开场 | 16:9 | 5 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/cartoon-scribble-open)，v1.0.2） | MIT | 黄色笔刷＋逐字彩色弹入＋四件手绘装饰；见 [docs/cartoon-scribble-open.md](docs/cartoon-scribble-open.md) |
-| `0107020001` | 水墨书法标题卡（Ink Brush Title） | `ink-brush-title` | 章节 | 16:9 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/ink-brush-title)，v1.0.2） | MIT | 墨笔横扫＋书法大字＋朱砂线＋印章；**已知缺陷：font 为空时主标题退回小字号**；见 [docs/ink-brush-title.md](docs/ink-brush-title.md) |
-| `0107030001` | 竖排姓名身份卡（Name Plaque Card） | `name-plaque-card` | 插入 | 9:16 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/name-plaque-card)，v1.0.0） | MIT | 双线框双向描边＋竖排姓名逐字落下＋朱印；见 [docs/name-plaque-card.md](docs/name-plaque-card.md) |
-| `0107040001` | 片尾关注卡（End Card CTA） | `end-card-cta` | 片尾 | 1:1 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/end-card-cta)，v1.1.0，下载 22） | MIT | 圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；v1.1.0 为 1:1 适配版；见 [docs/end-card-cta.md](docs/end-card-cta.md) |
+| `0107010001` | 卡通涂鸦片头（Cartoon Scribble Open） | `cartoon-scribble-open` | 开场 | 16:9 | 5 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/cartoon-scribble-open)，v1.0.2；30 天下载 33 / 访问 184） | MIT | 黄色笔刷＋逐字彩色弹入＋四件手绘装饰；见 [docs/cartoon-scribble-open.md](docs/cartoon-scribble-open.md) |
+| `0107020001` | 水墨书法标题卡（Ink Brush Title） | `ink-brush-title` | 章节 | 16:9 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/ink-brush-title)，v1.0.2；30 天下载 35 / 访问 172） | MIT | 墨笔横扫＋书法大字＋朱砂线＋印章；**已知缺陷：font 为空时主标题退回小字号**；见 [docs/ink-brush-title.md](docs/ink-brush-title.md) |
+| `0107030001` | 竖排姓名身份卡（Name Plaque Card） | `name-plaque-card` | 插入 | 9:16 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/name-plaque-card)，v1.0.0；30 天下载 34 / 访问 174） | MIT | 双线框双向描边＋竖排姓名逐字落下＋朱印；见 [docs/name-plaque-card.md](docs/name-plaque-card.md) |
+| `0107040001` | 片尾关注卡（End Card CTA） | `end-card-cta` | 片尾 | 1:1 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/end-card-cta)，v1.1.0；30 天下载 28 / 访问 166） | MIT | 圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；v1.1.0 为 1:1 适配版；见 [docs/end-card-cta.md](docs/end-card-cta.md) |
 
-> 片段的三支下载量尚未采集（页面只显示已发布状态），不填估算值。
+> 片段与全库的「30 天下载 / 访问」取自作者后台作品数据页（`/dashboard/insights`，登录态，2026-11-21），**窗口是近 30 天、非累计**；累计数以作品页下载计数为准，两者口径不同不可混用。平台 `templateId` 一经分配**不可更改**（平台硬规），故本条目的 `模板 id` 与作品页地址永久绑定，编号 `0107010001`–`0107040001` 只作资产层追溯。
 
 ## 暂未公开发布
 

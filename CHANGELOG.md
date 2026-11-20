@@ -2,6 +2,9 @@
 
 ## 2026-11-21
 
+- **采集 30 天作品数据并把片段下载量补齐**（来源：作者后台 `/dashboard/insights`，登录态，2026-11-21）：卡通涂鸦片头 33 下载 / 184 访问、水墨书法标题卡 35 / 172、竖排姓名身份卡 34 / 174、片尾关注卡 28 / 166；三支完整模板同期 30 天为点阵肖像 171 / 623、暗场极客 78 / 326、3D粒子 48 / 196。`catalog.json` 全部加 `analytics30d` 字段（window / asOf / downloads / pageViews / source），README 片段表补窗口口径注：**30 天 ≠ 累计，不可与作品页计数混用**。
+- **平台硬规入库**：MotionGit `templateId` 一经分配**不可更改**，条目 `模板 id` 与作品页地址永久绑定；资产编号仅作追溯，不改 id、不换号。
+
 - **登记 4 支动效片段（新增「动效片段」分组）**：`cartoon-scribble-open`（卡通涂鸦片头，v1.0.2）、`ink-brush-title`（水墨书法标题卡，v1.0.2）、`name-plaque-card`（竖排姓名身份卡，v1.0.0）、`end-card-cta`（片尾关注卡，v1.1.0）四条 `published` 条目，各带编号 `0107010001`–`0107040001`、`contentType: motion-fragment`、placement（opening/chapter/insert/ending）与独立说明页。本体在资产层私密仓，合集只登记能力与获取方式。
 - **如实标注**：水墨书法标题卡的「font 为空时主标题退回小字号」缺陷写进条目 notes 与说明页；三支片段下载量未采集，不填估算值；片尾关注卡沿用 2026-11-20 回读的 22 次下载。
 - counts：total 7→11，`published` 3→7，`publicDownloadable` 3→7；`generatedAt` 2026-11-21。

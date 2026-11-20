@@ -38,7 +38,14 @@
       },
       "doc": "docs/dotmatrix-portrait.md",
       "notes": "三段人像 → 粒子散开 → 标题汇聚；改时长需同步改时间点",
-      "code": "0202010001"
+      "code": "0202010001",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 171,
+        "pageViews": 623,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "geek-dark-talk-v1",
@@ -65,7 +72,14 @@
       },
       "doc": "docs/geek-dark-talk.md",
       "notes": "干净室自主实现；只给结构化 sections，语义层自动映射 12 类角色镜头；画面全程序化生成无外部图片；时长按内容伸缩（默认样例 4m29s）",
-      "code": "0201010001"
+      "code": "0201010001",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 78,
+        "pageViews": 326,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "light-ribbon-word-v1",
@@ -144,7 +158,14 @@
       },
       "doc": null,
       "notes": "八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发",
-      "code": "0203010001"
+      "code": "0203010001",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 48,
+        "pageViews": 196,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "0106010001-kindergarten-daily",
@@ -224,7 +245,14 @@
       "doc": "docs/cartoon-scribble-open.md",
       "notes": "动效片段·开场（placement=opening）；黄色笔刷＋逐字彩色弹入＋四件手绘装饰＋程序音效；固定 5s、透明背景；下载量未采集",
       "code": "0107010001",
-      "contentType": "motion-fragment"
+      "contentType": "motion-fragment",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 33,
+        "pageViews": 184,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "ink-brush-title",
@@ -252,7 +280,14 @@
       "doc": "docs/ink-brush-title.md",
       "notes": "动效片段·章节（placement=chapter）；墨笔横扫＋书法大字遮罩渐显＋朱砂线＋印章；固定 3s、透明背景；已知缺陷：font 为空时主标题退回小字号（1.0.3 候选）",
       "code": "0107020001",
-      "contentType": "motion-fragment"
+      "contentType": "motion-fragment",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 35,
+        "pageViews": 172,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "name-plaque-card",
@@ -280,7 +315,14 @@
       "doc": "docs/name-plaque-card.md",
       "notes": "动效片段·插入（placement=insert）；双线框双向描边＋竖排姓名逐字落下＋朱印＋微光；固定 3s、竖屏、透明背景",
       "code": "0107030001",
-      "contentType": "motion-fragment"
+      "contentType": "motion-fragment",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 34,
+        "pageViews": 174,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     },
     {
       "id": "end-card-cta",
@@ -308,7 +350,14 @@
       "doc": "docs/end-card-cta.md",
       "notes": "动效片段·片尾（placement=ending）；圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；固定 3s、方形 1:1、透明背景；v1.1.0 为 1:1 适配版",
       "code": "0107040001",
-      "contentType": "motion-fragment"
+      "contentType": "motion-fragment",
+      "analytics30d": {
+        "window": "30d",
+        "asOf": "2026-11-21",
+        "downloads": 28,
+        "pageViews": 166,
+        "source": "motiongit.com/dashboard/insights（登录态）"
+      }
     }
   ]
 }
