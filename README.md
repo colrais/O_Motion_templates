@@ -2,11 +2,23 @@
 
 把自制模板收拢到一个公开入口：一眼看清有哪些模板、能改什么、当前是什么状态、去哪里拿。
 
+`13 支模板` · `9 支已上线` · `完整模板 5 / 动效片段 4` · `公开模板成片均可商用`
+
 本仓库**只承载索引与文档**，不分发模板二进制、不含账号凭据、不含本机路径。模板本体通过 MotionGit 平台获取。
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/0110010001-particle-arrow-illusion"><img src="docs/assets/cover-particle.jpg" width="100%"></a><br><b>3D粒子_逆转乾坤</b><br><sub>9:16 · 15s · 移动视线即逆转</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/name-plaque-card"><img src="docs/assets/cover-namecard.jpg" width="100%"></a><br><b>竖排姓名身份卡</b><br><sub>9:16 · 3s · 黑金/玉白/素白</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/end-card-cta"><img src="docs/assets/cover-endcard.jpg" width="100%"></a><br><b>片尾关注卡</b><br><sub>1:1 · 3s · 图标文案皆可换</sub></td>
+</tr>
+</table>
+
+> **封面规范**：非 16:9 的模板不再用成片截图直接当封面（竖图在模板中心卡片里会被裁切、变形）。对外封面统一 **1920×1080**：横向排 3 个 2.5D 屏/卡（中间正面主屏 + 左右后景侧屏，投影制造纵深），左侧放标题、一句话卖点与参数标签——一张图说清「它长什么样、能改什么」。
 
 ![点阵肖像 · 结尾标题帧](docs/assets/preview-title.jpg)
 
-> 上图为点阵肖像成片的结尾标题帧（v1.0.0，标题「点的轮廓 / OUTLINE OF DOTS」）。人像帧涉及示例人物肖像，不在公开仓展示。
+> 上图为点阵肖像成片的结尾标题帧（v1.5.0，标题「点的轮廓 / OUTLINE OF DOTS」）。人像帧涉及示例人物肖像，不在公开仓展示。
 
 ---
 
@@ -39,16 +51,6 @@
 | `0109010001` | 线稿故事（Line Story） | `0109010001-line-story` | 原创 | 16:9 | 30 s（默认，按内容伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0109010001-line-story)，v0.2.3，2026-11-24 过审） | mg-commercial | 暗底金线逐笔生长＋旁白驱动分幕，内容有多少画多少；见 [docs/line-story.md](docs/line-story.md) |
 | `0110010001` | 3D粒子_逆转乾坤 | `0110010001-particle-arrow-illusion` | 原创 | 9:16 | 15 s（固定，无缝循环） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0110010001-particle-arrow-illusion)，v0.1.0，2026-11-24 过审） | mg-commercial | 双稳态旋转错觉：移动视线焦点即逆转；即时设计与推荐，arrow/rings 仅为预置方案；见 [docs/particle-arrow-illusion.md](docs/particle-arrow-illusion.md) |
 
-### 新上架预览
-
-线稿故事（v0.2.3，样例帧「一碗面，也画得出热气」）：
-
-![线稿故事](docs/assets/preview-line-story.jpg)
-
-3D粒子_逆转乾坤（v0.1.0，双环互扣预置）：
-
-![3D粒子_逆转乾坤](docs/assets/preview-particle-arrow.jpg)
-
 ### 动效片段（motion-fragment）
 
 以下四支为**叠加用的动效片段**（非完整模板）：固定时长、透明背景、可叠到任意画面上。
@@ -56,9 +58,9 @@
 | 编号 | 模板 | 模板 id | 位置 | 画幅 | 时长 | 状态 | 许可 | 说明 |
 |---|---|---|---|---|---|---|---|---|
 | `0107010001` | 卡通涂鸦片头（Cartoon Scribble Open） | `cartoon-scribble-open` | 开场 | 16:9 | 5 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/cartoon-scribble-open)，v1.0.2；30 天下载 33 / 访问 184） | MIT | 黄色笔刷＋逐字彩色弹入＋四件手绘装饰；见 [docs/cartoon-scribble-open.md](docs/cartoon-scribble-open.md) |
-| `0107020001` | 水墨书法标题卡（Ink Brush Title） | `ink-brush-title` | 章节 | 16:9 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/ink-brush-title)，v1.0.2；30 天下载 35 / 访问 172） | MIT | 墨笔横扫＋书法大字＋朱砂线＋印章；**已知缺陷：font 为空时主标题退回小字号**；见 [docs/ink-brush-title.md](docs/ink-brush-title.md) |
+| `0107020001` | 水墨书法标题卡（Ink Brush Title） | `ink-brush-title` | 章节 | 16:9 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/ink-brush-title)，v1.0.4；30 天下载 35 / 访问 172） | MIT | 墨笔横扫＋书法大字＋朱砂线＋印章；**已知缺陷：font 为空时主标题退回小字号**；见 [docs/ink-brush-title.md](docs/ink-brush-title.md) |
 | `0107030001` | 竖排姓名身份卡（Name Plaque Card） | `name-plaque-card` | 插入 | 9:16 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/name-plaque-card)，v1.0.0；30 天下载 34 / 访问 174） | MIT | 双线框双向描边＋竖排姓名逐字落下＋朱印；见 [docs/name-plaque-card.md](docs/name-plaque-card.md) |
-| `0107040001` | 片尾关注卡（End Card CTA） | `end-card-cta` | 片尾 | 1:1 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/end-card-cta)，v1.1.0；30 天下载 28 / 访问 166） | MIT | 圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；v1.1.0 为 1:1 适配版；见 [docs/end-card-cta.md](docs/end-card-cta.md) |
+| `0107040001` | 片尾关注卡（End Card CTA） | `end-card-cta` | 片尾 | 1:1 | 3 s（固定） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/end-card-cta)，v1.1.1；30 天下载 28 / 访问 166） | MIT | 圆环描出＋品牌名上浮＋胶囊 CTA 回弹＋彗星公转；v1.1.0 为 1:1 适配版；见 [docs/end-card-cta.md](docs/end-card-cta.md) |
 
 > 片段与全库的「30 天下载 / 访问」取自作者后台作品数据页（`/dashboard/insights`，登录态，2026-11-21），**窗口是近 30 天、非累计**；累计数以作品页下载计数为准，两者口径不同不可混用。平台 `templateId` 一经分配**不可更改**（平台硬规），故本条目的 `模板 id` 与作品页地址永久绑定，编号 `0107010001`–`0107040001` 只作资产层追溯。
 
@@ -100,9 +102,11 @@
 ├── catalog.json           机器可读索引（与上方表格同源）
 ├── docs/
 │   ├── assets/
-│   │   ├── preview-title.jpg          点阵肖像结尾标题帧（公开预览）
-│   │   ├── preview-line-story.jpg     线稿故事样例帧
-│   │   └── preview-particle-arrow.jpg 3D粒子_逆转乾坤（双环互扣预置）
+│   │   ├── cover-particle.jpg         3D粒子_逆转乾坤 16:9 封面
+│   │   ├── cover-namecard.jpg         竖排姓名身份卡 16:9 封面
+│   │   ├── cover-endcard.jpg          片尾关注卡 16:9 封面
+│   │   ├── preview-title.jpg          点阵肖像结尾标题帧
+│   │   └── preview-line-story.jpg     线稿故事样例帧
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议
 │   ├── geek-dark-talk.md        暗场极客知识口播：参数表、角色映射、渲染命令
 │   ├── line-story.md            线稿故事：分幕结构、可改内容、限制
@@ -126,3 +130,4 @@
 
 - MotionGit：[@fangcs](https://motiongit.com/fangcs)
 - 问题与建议：开 Issue
+
