@@ -1,5 +1,12 @@
 # 变更记录
 
+## 2026-11-24（二·续三）展示站图片加载优化
+
+- **缩略图层级**：新增 `docs/assets/thumb/{name}-640.webp`、`-960.webp`（640×360 ≈8–11KB，960×540 ≈14–21KB），卡片用 `srcset`+`sizes` 按屏宽和 DPR 自动选档，9 张总量从约 540KB JPEG 降到 ≈80KB（1x）/≈140KB（2x）。
+- **图源换线路**：封面走 jsDelivr 的 GitHub 镜像 `cdn.jsdelivr.net/gh/colrais/O_Motion_templates@main/…`（同文件实测比 github.io 快一档，且有远端缓存），`<link rel="preconnect">` 提前建连；`onerror` 自动回落到仓库内本地图。
+- **首屏优先**：前 3 张 `loading=eager` + `fetchpriority=high` + `<link rel=preload as=image imagesrcset=…>`，其余 `loading=lazy`；`width/height` 补齐避免布局抖动。
+- **模糊占位**：每张封面内联一张 32×18 的 LQIP（各约 258B，共 2.3KB）作为 `.media` 背景，图片未到时先出轮廓，index.html 由 7.5KB 增到 15KB。
+- 复跑 `python site/build.py` 即重建；新增封面时需同步生成 thumb 与 lqip（ffmpeg 一行 scale 命令，见 README 结构说明）。
 ## 2026-11-24（二）
 
 - **非 16:9 模板封面重做**：3D粒子_逆转乾坤（9:16）、竖排姓名身份卡（9:16）、片尾关注卡（1:1）三支原封面来自成片截图，在模板中心卡片里被裁切/变形。改为统一 **1920×1080 宣传型封面**：横向 3 个 2.5D 屏/卡（中间正面主屏＋左右后景侧屏，rotateY＋投影造纵深），左侧标题、一句话卖点、参数标签（画幅/时长/可改项）。
@@ -109,4 +116,5 @@
   - `board-writing-english-v2` 板书讲解·英语句式 — 本地留存
   - 注：本条记录当时使用的旧术语与旧标识，已于 2026-11-16 统一为四档来源性质，历史记录不改写
 - 明确口径：仓库只承载索引与文档，不分发模板二进制；不含凭据与本机路径
+
 
