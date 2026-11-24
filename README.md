@@ -16,6 +16,21 @@
 
 > **封面规范**：非 16:9 的模板不再用成片截图直接当封面（竖图在模板中心卡片里会被裁切、变形）。对外封面统一 **1920×1080**：横向排 3 个 2.5D 屏/卡（中间正面主屏 + 左右后景侧屏，投影制造纵深），左侧放标题、一句话卖点与参数标签——一张图说清「它长什么样、能改什么」。
 
+### 16:9 全量封面（同规格）
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/0109010001-line-story"><img src="docs/assets/cover-linestory.jpg" width="100%"></a><br><b>线稿故事</b><br><sub>16:9 · 30s · 一根金线画完</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/ink-brush-title"><img src="docs/assets/cover-inkbrush.jpg" width="100%"></a><br><b>水墨书法标题卡</b><br><sub>16:9 · 3s · 标题/副标/落款</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/cartoon-scribble-open"><img src="docs/assets/cover-cartoon.jpg" width="100%"></a><br><b>卡通涂鸦片头</b><br><sub>16:9 · 5s · 涂鸦带写标题</sub></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/dotmatrix-portrait-v1"><img src="docs/assets/cover-dotmatrix.jpg" width="100%"></a><br><b>点阵肖像</b><br><sub>16:9 · 13s · 人像化网点</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/geek-dark-talk-v1"><img src="docs/assets/cover-geekdark.jpg" width="100%"></a><br><b>暗场极客·知识口播</b><br><sub>16:9 · 4m29s · 面板/字幕</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/particle-form-morph-v1"><img src="docs/assets/cover-morph.jpg" width="100%"></a><br><b>3D 粒子·形态迁移</b><br><sub>16:9 · 18s · 五种形态</sub></td>
+</tr>
+</table>
+
 ![点阵肖像 · 结尾标题帧](docs/assets/preview-title.jpg)
 
 > 上图为点阵肖像成片的结尾标题帧（v1.5.0，标题「点的轮廓 / OUTLINE OF DOTS」）。人像帧涉及示例人物肖像，不在公开仓展示。

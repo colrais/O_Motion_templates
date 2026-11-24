@@ -9,6 +9,13 @@
 - 封面版式修订：首版右侧第三屏越过 1920 右边界，在平台 640×360 卡片里被硬切。已把右侧屏内收（左移 60–72px 且略微缩小），重渲染三张 PNG 并逐像素确认右边缘 60px 内无亮像素，重新上传三支作品（服务端资源仍为 1920×1080，哈希已更新），仓库 1280×720 导出同步更新。
 - 尚未在仓库内落地：GitHub Pages 静态展示站（首屏 HTML 可自定义、图片等比限宽），待开。
 
+## 2026-11-24（二·续）16:9 封面全量化
+
+- **封面工坊 CoverKit**：把一次性脚本升级成参数化模板——`spec.json`（编号/类型/标题/卖点/参数/徽标/主题/版式/三帧）驱动 1920×1080 出图，3 套版式（`portrait3` 9:16 三屏、`square3` 1:1 三卡、`landscape3` 16:9 三帧）、8 套主题配色（lime/gold/blue/amber/cyan/teal/candy/ink），Chrome headless 渲染，无第三方依赖。
+- **6 支 16:9 模板封面全部重做**：线稿故事、水墨书法标题卡、卡通涂鸦片头、点阵肖像、暗场极客知识口播、3D 粒子形态迁移，原封面均为成片截图，现改为同规格宣传型封面（左侧信息栏 + 右侧三帧 2.5D）。
+- 新增 `docs/assets/cover-linestory.jpg`、`cover-inkbrush.jpg`、`cover-cartoon.jpg`、`cover-dotmatrix.jpg`、`cover-geekdark.jpg`、`cover-morph.jpg`（1280×720），README 新增「16:9 全量封面（同规格）」3×2 卡片表。
+- 平台侧已替换六支作品封面并核对服务端资源均为 1920×1080；有中文语言槽的作品先置 `zh` 再上传，避免被默认槽覆盖。
+
 ## 2026-11-24
 
 - **登记 2 支新上架完整模板（同日过审）**：`0109010001-line-story`（线稿故事 v0.2.3，16:9，默认 30s，mg-commercial）与 `0110010001-particle-arrow-illusion`（3D粒子_逆转乾坤 v0.1.0，9:16，固定 15s 无缝循环，mg-commercial）两条 `published` 条目，各带独立说明页 `docs/line-story.md`、`docs/particle-arrow-illusion.md`。两作品页匿名 HEAD 均 200，实名口径沿用 `@fangcs` 形式。
