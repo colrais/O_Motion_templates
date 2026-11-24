@@ -4,6 +4,8 @@
 
 `13 支模板` · `9 支已上线` · `完整模板 5 / 动效片段 4` · `公开模板成片均可商用`
 
+**在线浏览**：<https://colrais.github.io/O_Motion_templates/>（卡片墙 · 按类型/画幅筛选 · 关键词搜索）
+
 本仓库**只承载索引与文档**，不分发模板二进制、不含账号凭据、不含本机路径。模板本体通过 MotionGit 平台获取。
 
 <table>
@@ -114,12 +116,22 @@
 ```
 .
 ├── README.md              本文件：合集入口、来源性质与状态口径
+├── index.html             GitHub Pages 展示站（卡片墙，由 site/build.py 生成）
+├── .nojekyll              Pages：跳过 Jekyll 处理
+├── assets/site.css        展示站样式
+├── site/build.py          读 catalog.json 生成 index.html
 ├── catalog.json           机器可读索引（与上方表格同源）
 ├── docs/
 │   ├── assets/
 │   │   ├── cover-particle.jpg         3D粒子_逆转乾坤 16:9 封面
 │   │   ├── cover-namecard.jpg         竖排姓名身份卡 16:9 封面
 │   │   ├── cover-endcard.jpg          片尾关注卡 16:9 封面
+│   │   ├── cover-dotmatrix.jpg        点阵肖像 16:9 封面
+│   │   ├── cover-geekdark.jpg         暗场极客知识口播 16:9 封面
+│   │   ├── cover-morph.jpg            3D 粒子形态迁移 16:9 封面
+│   │   ├── cover-linestory.jpg        线稿故事 16:9 封面
+│   │   ├── cover-inkbrush.jpg         水墨书法标题卡 16:9 封面
+│   │   ├── cover-cartoon.jpg          卡通涂鸦片头 16:9 封面
 │   │   ├── preview-title.jpg          点阵肖像结尾标题帧
 │   │   └── preview-line-story.jpg     线稿故事样例帧
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议

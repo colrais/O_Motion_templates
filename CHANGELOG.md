@@ -9,6 +9,13 @@
 - 封面版式修订：首版右侧第三屏越过 1920 右边界，在平台 640×360 卡片里被硬切。已把右侧屏内收（左移 60–72px 且略微缩小），重渲染三张 PNG 并逐像素确认右边缘 60px 内无亮像素，重新上传三支作品（服务端资源仍为 1920×1080，哈希已更新），仓库 1280×720 导出同步更新。
 - 尚未在仓库内落地：GitHub Pages 静态展示站（首屏 HTML 可自定义、图片等比限宽），待开。
 
+## 2026-11-24（二·续二）GitHub Pages 展示站上线
+
+- **新站点**：<https://colrais.github.io/O_Motion_templates/> —— 单页卡片墙，9 支已上线模板一次看全；支持按 `完整模板 / 动效片段` 与 `16:9 / 9:16 / 1:1` 筛选，可按标题、编号、关键词搜索。
+- **版式口径**：卡片舞台统一 `aspect-ratio:16/10` + `object-fit:contain`，因此 16:9 封面在竖屏模板条目里也能完整显示（避开 README 里「竖屏固定 202 宽」导致的压缩问题）。
+- **生成方式**：`site/build.py` 读 `catalog.json` + 内置封面/文案映射，输出根目录 `index.html`；样式在 `assets/site.css`；`.nojekyll` 关闭 Jekyll。改模板只需改 catalog.json 再跑一次脚本。
+- README 首屏加了在线浏览入口，仓库结构树补 `index.html`、`site/`、`assets/site.css` 与六张新封面。
+
 ## 2026-11-24（二·续）16:9 封面全量化
 
 - **封面工坊 CoverKit**：把一次性脚本升级成参数化模板——`spec.json`（编号/类型/标题/卖点/参数/徽标/主题/版式/三帧）驱动 1920×1080 出图，3 套版式（`portrait3` 9:16 三屏、`square3` 1:1 三卡、`landscape3` 16:9 三帧）、8 套主题配色（lime/gold/blue/amber/cyan/teal/candy/ink），Chrome headless 渲染，无第三方依赖。
