@@ -124,6 +124,12 @@ let kind = "all", ratio = "all";
 
 const CDN = "__CDN__";
 
+// 缩略图走 CDN 失败时逐级回落：先去 srcset 用仓库内本地图，再失败就只留模糊占位
+function imgFallback(el){
+  if(!el.dataset.fb){ el.dataset.fb = "1"; el.removeAttribute("srcset"); el.src = el.dataset.local; }
+  else { el.style.visibility = "hidden"; }
+}
+
 function card(t, i){
   const spec = [t.orientation, t.duration ? t.duration : "", t.fps ? t.fps + " FPS" : "", "v" + t.version]
     .filter(Boolean).join(" · ");
@@ -133,10 +139,10 @@ function card(t, i){
   const prio = i < 3;
   const ph = t.lqip ? ` style="background-image:url('${t.lqip}')"` : "";
   return `<article class="card" data-kind="${t.kind}" data-ratio="${t.orientation}" data-q="${t.search}">
-    <div class="media"${ph}><img src="${t640}" srcset="${t640} 640w, ${t960} 960w, ${full} 1280w"
+    <div class="media"${ph}><img src="docs/assets/${t.cover}" srcset="${t640} 640w, ${t960} 960w, ${full} 1280w"
       sizes="(min-width:1160px) 420px, (min-width:680px) 45vw, 90vw" width="640" height="360"
       loading="${prio ? "eager" : "lazy"}" fetchpriority="${prio ? "high" : "low"}" decoding="async"
-      onerror="this.onerror=null;this.removeAttribute('srcset');this.src='docs/assets/${t.cover}'"
+      onerror="imgFallback(this)" data-local="docs/assets/${t.cover}"
       alt="${t.name} 封面"><span class="badge">已上线</span></div>
     <div class="body">
       <p class="meta"><span class="kind">${t.kind}</span><span class="code">${t.code}</span></p>
@@ -227,5 +233,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
