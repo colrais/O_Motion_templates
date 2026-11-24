@@ -4,13 +4,22 @@
 
 用法：python site/build.py     # 在仓库根目录产出 index.html、.nojekyll
 """
-import json, pathlib, html
+import json, pathlib, html, base64
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog.json"
+ASSETS = ROOT / "docs" / "assets"
 
 # 封面与缩略图走 jsDelivr 的 GitHub 镜像（国内访问比 github.io 快，且自动缓存）
 CDN = "https://cdn.jsdelivr.net/gh/colrais/O_Motion_templates@main/"
+
+
+def lqip_data_uri(name: str) -> str:
+    """32×18 极低清占位图，内联进 HTML，图片到达前先给个模糊轮廓。"""
+    f = ASSETS / "lqip" / f"{name}.jpg"
+    if not f.is_file():
+        return ""
+    return "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
 
 # 只有已上线的 9 支进卡片墙；slug 用于平台链接
 META = {
@@ -122,8 +131,9 @@ function card(t, i){
   const t960 = CDN + "docs/assets/thumb/" + t.thumb + "-960.webp";
   const full = CDN + "docs/assets/" + t.cover;
   const prio = i < 3;
+  const ph = t.lqip ? ` style="background-image:url('${t.lqip}')"` : "";
   return `<article class="card" data-kind="${t.kind}" data-ratio="${t.orientation}" data-q="${t.search}">
-    <div class="media"><img src="${t640}" srcset="${t640} 640w, ${t960} 960w, ${full} 1280w"
+    <div class="media"${ph}><img src="${t640}" srcset="${t640} 640w, ${t960} 960w, ${full} 1280w"
       sizes="(min-width:1160px) 420px, (min-width:680px) 45vw, 90vw" width="640" height="360"
       loading="${prio ? "eager" : "lazy"}" fetchpriority="${prio ? "high" : "low"}" decoding="async"
       onerror="this.onerror=null;this.removeAttribute('srcset');this.src='docs/assets/${t.cover}'"
@@ -189,6 +199,7 @@ def main():
             orientation=t["orientation"], duration=dur_s, fps=t.get("fps"),
             kind=m["kind"], slug=m["slug"], cover=m["cover"], line=m["line"],
             thumb=m["cover"].replace("cover-", "").replace(".jpg", ""),
+            lqip=lqip_data_uri(m["cover"].replace("cover-", "").replace(".jpg", "")),
             doc=t.get("doc") or "",
             search=" ".join([t["name"], t["code"], m["line"], m["kind"]]).lower(),
         ))
