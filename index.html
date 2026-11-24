@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>O.motion · 模板合集</title>
+<meta name="description" content="自制 MotionGit 模板合集：9 支已上线，封面一张图说清它长什么样、能改什么。">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./">O<span>.motion</span></a>
+  <nav>
+    <a href="https://github.com/colrais/O_Motion_templates" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://motiongit.com/@fangcs" target="_blank" rel="noopener">作者页 ↗</a>
+    <a href="README.md">README</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <p class="eyebrow">MOTION TEMPLATES · @fangcs</p>
+  <h1>模板做成一张图就能读懂</h1>
+  <p class="lead">已上线 9 支：横屏、竖屏、方形都在这里。每张封面都是重新设计的宣传页——先看它长什么样，再决定要不要换自己的素材。</p>
+  <div class="stats">
+    <span><b>13</b> 支在库</span>
+    <span><b>9</b> 支已上线</span>
+    <span><b>5</b> 完整模板 · <b>4</b> 动效片段</span>
+    <span>公开模板成片均可商用</span>
+  </div>
+</section>
+
+<section class="toolbar">
+  <div class="filters" id="kind-filters">
+    <button data-kind="all" aria-pressed="true">全部</button>
+    <button data-kind="完整模板" aria-pressed="false">完整模板</button>
+    <button data-kind="动效片段" aria-pressed="false">动效片段</button>
+  </div>
+  <div class="filters" id="ratio-filters">
+    <button data-ratio="all" aria-pressed="true">全部画幅</button>
+    <button data-ratio="16:9" aria-pressed="false">16:9</button>
+    <button data-ratio="9:16" aria-pressed="false">9:16</button>
+    <button data-ratio="1:1" aria-pressed="false">1:1</button>
+  </div>
+  <div class="search-row">
+    <input id="q" type="search" placeholder="搜标题、编号或关键词，如 粒子 / 水墨 / 0107">
+    <span id="count"></span>
+  </div>
+</section>
+
+<section class="grid" id="grid"></section>
+<p id="empty" hidden>没有匹配的模板，换个关键词试试。</p>
+</main>
+
+<footer>
+  <p>本仓库只承载索引、封面与文档，不分发模板二进制。模板本体通过 MotionGit 平台获取；成片可否商用按各模板声明（MIT / mg-commercial）。</p>
+  <p><a href="https://github.com/colrais/O_Motion_templates" target="_blank" rel="noopener">colrais/O_Motion_templates</a>
+     <a href="https://motiongit.com/@fangcs" target="_blank" rel="noopener">motiongit.com/@fangcs</a></p>
+</footer>
+
+<script>
+const DATA = [{"code": "0202010001", "name": "点阵肖像", "version": "1.5.0", "orientation": "16:9", "duration": "13s", "fps": 30, "kind": "完整模板", "slug": "dotmatrix-portrait-v1", "cover": "cover-dotmatrix.jpg", "line": "三张人像化作双色网点，散开又重新聚拢拼出标题——一部 13 秒的横屏开场。", "doc": "docs/dotmatrix-portrait.md", "search": "点阵肖像（dotmatrix portrait） 0202010001 三张人像化作双色网点，散开又重新聚拢拼出标题——一部 13 秒的横屏开场。 完整模板"}, {"code": "0201010001", "name": "暗场极客知识口播", "version": "1.3.1", "orientation": "16:9", "duration": "4m29s", "fps": 60, "kind": "完整模板", "slug": "geek-dark-talk-v1", "cover": "cover-geekdark.jpg", "line": "暗色控制台 + 数据面板 + 逐条字幕，把硬知识讲成有节奏的口播画面。", "doc": "docs/geek-dark-talk.md", "search": "暗场极客知识口播 0201010001 暗色控制台 + 数据面板 + 逐条字幕，把硬知识讲成有节奏的口播画面。 完整模板"}, {"code": "0203010001", "name": "3D粒子形变", "version": "1.3.1", "orientation": "16:9", "duration": "18s", "fps": 30, "kind": "完整模板", "slug": "particle-form-morph-v1", "cover": "cover-morph.jpg", "line": "八个三维形状连续形变：球体、环面、双螺旋、立方体、黑洞漩涡……换形换色即时出片。", "doc": "", "search": "3d粒子形变 0203010001 八个三维形状连续形变：球体、环面、双螺旋、立方体、黑洞漩涡……换形换色即时出片。 完整模板"}, {"code": "0107010001", "name": "卡通涂鸦片头", "version": "1.0.2", "orientation": "16:9", "duration": "5s", "fps": 30, "kind": "动效片段", "slug": "cartoon-scribble-open", "cover": "cover-cartoon.jpg", "line": "5 秒手绘片头。黄色笔刷写在屏幕上，标题逐字彩色弹入，配四件手绘装饰。", "doc": "docs/cartoon-scribble-open.md", "search": "卡通涂鸦片头（cartoon scribble open） 0107010001 5 秒手绘片头。黄色笔刷写在屏幕上，标题逐字彩色弹入，配四件手绘装饰。 动效片段"}, {"code": "0107020001", "name": "水墨书法标题卡", "version": "1.0.4", "orientation": "16:9", "duration": "3s", "fps": 30, "kind": "动效片段", "slug": "ink-brush-title", "cover": "cover-inkbrush.jpg", "line": "3 秒水墨章节卡。墨笔横扫、书法大字遮罩渐显，朱砂线与印章收住版面。", "doc": "docs/ink-brush-title.md", "search": "水墨书法标题卡（ink brush title） 0107020001 3 秒水墨章节卡。墨笔横扫、书法大字遮罩渐显，朱砂线与印章收住版面。 动效片段"}, {"code": "0107030001", "name": "竖排姓名身份卡", "version": "1.0.0", "orientation": "9:16", "duration": "3s", "fps": 30, "kind": "动效片段", "slug": "name-plaque-card", "cover": "cover-namecard.jpg", "line": "3 秒竖屏身份卡。双线长框双向描边、竖排姓名逐字落下，朱印收尾。", "doc": "docs/name-plaque-card.md", "search": "竖排姓名身份卡（name plaque card） 0107030001 3 秒竖屏身份卡。双线长框双向描边、竖排姓名逐字落下，朱印收尾。 动效片段"}, {"code": "0107040001", "name": "片尾关注卡", "version": "1.1.1", "orientation": "1:1", "duration": "3s", "fps": 30, "kind": "动效片段", "slug": "end-card-cta", "cover": "cover-endcard.jpg", "line": "3 秒方形片尾。加号图标 + 一句订阅语 + 胶囊 CTA 回弹，图标文案配色都是参数。", "doc": "docs/end-card-cta.md", "search": "片尾关注卡（end card cta） 0107040001 3 秒方形片尾。加号图标 + 一句订阅语 + 胶囊 cta 回弹，图标文案配色都是参数。 动效片段"}, {"code": "0109010001", "name": "线稿故事", "version": "0.2.3", "orientation": "16:9", "duration": "30s", "fps": 30, "kind": "完整模板", "slug": "0109010001-line-story", "cover": "cover-linestory.jpg", "line": "一根金线画完整条故事，旁白驱动分幕；加一幕加一句旁白，片子就跟着变长。", "doc": "docs/line-story.md", "search": "线稿故事（line story） 0109010001 一根金线画完整条故事，旁白驱动分幕；加一幕加一句旁白，片子就跟着变长。 完整模板"}, {"code": "0110010001", "name": "3D粒子_逆转乾坤", "version": "0.1.0", "orientation": "9:16", "duration": "15s", "fps": 30, "kind": "完整模板", "slug": "0110010001-particle-arrow-illusion", "cover": "cover-particle.jpg", "line": "15 秒竖屏无缝循环。盯住一个方向，视线一移它就反向旋转；改字换色即时出片。", "doc": "docs/particle-arrow-illusion.md", "search": "3d粒子_逆转乾坤 0110010001 15 秒竖屏无缝循环。盯住一个方向，视线一移它就反向旋转；改字换色即时出片。 完整模板"}];
+const grid = document.getElementById("grid");
+const q = document.getElementById("q");
+const count = document.getElementById("count");
+const empty = document.getElementById("empty");
+let kind = "all", ratio = "all";
+
+function card(t){
+  const spec = [t.orientation, t.duration ? t.duration : "", t.fps ? t.fps + " FPS" : "", "v" + t.version]
+    .filter(Boolean).join(" · ");
+  return `<article class="card" data-kind="${t.kind}" data-ratio="${t.orientation}" data-q="${t.search}">
+    <div class="media"><img src="docs/assets/${t.cover}" alt="${t.name} 封面" decoding="async"><span class="badge">已上线</span></div>
+    <div class="body">
+      <p class="meta"><span class="kind">${t.kind}</span><span class="code">${t.code}</span></p>
+      <h2>${t.name}</h2>
+      <p class="line">${t.line}</p>
+      <p class="spec">${spec}</p>
+      <div class="links">
+        <a class="primary" href="https://motiongit.com/@fangcs/${t.slug}" target="_blank" rel="noopener">查看模板 ↗</a>
+        ${t.doc ? `<a href="${t.doc}">说明文档</a>` : ""}
+        <a href="docs/assets/${t.cover}" target="_blank" rel="noopener">封面原图</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+function render(){
+  const kw = (q.value || "").trim().toLowerCase();
+  const list = DATA.filter(t => (kind === "all" || t.kind === kind) &&
+                                (ratio === "all" || t.orientation === ratio) &&
+                                (!kw || t.search.includes(kw)));
+  grid.innerHTML = list.map(card).join("");
+  count.textContent = list.length + " / " + DATA.length;
+  empty.hidden = list.length > 0;
+}
+
+document.querySelectorAll("#kind-filters button").forEach(b => b.onclick = () => {
+  kind = b.dataset.kind;
+  document.querySelectorAll("#kind-filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+document.querySelectorAll("#ratio-filters button").forEach(b => b.onclick = () => {
+  ratio = b.dataset.ratio;
+  document.querySelectorAll("#ratio-filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+q.addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
