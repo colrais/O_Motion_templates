@@ -1,16 +1,16 @@
 {
   "schemaVersion": "collection-1.0",
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-24",
   "note": "合集机器索引；与 README 表格同源。状态口径见 README「状态口径」。本文件不含模板二进制与凭据。draft-private = 资产层存在但未对外发布的私密模板，仅作可发现性登记。下载数两个字段不可混用：publish.downloads 为页面抓取时点值（见 publish.downloadsObservedAt，历史口径未单独标注），analytics30d 为作者后台作品数据页的近 30 天窗口值（window/asOf/downloads/pageViews），30 天 ≠ 累计。",
   "counts": {
-    "total": 11,
+    "total": 13,
     "byStatus": {
-      "published": 7,
+      "published": 9,
       "in-review": 0,
       "draft-private": 2,
       "shelved": 2
     },
-    "publicDownloadable": 7
+    "publicDownloadable": 9
   },
   "templates": [
     {
@@ -362,6 +362,62 @@
         "pageViews": 166,
         "source": "motiongit.com/dashboard/insights（登录态）"
       }
+    },
+    {
+      "id": "0109010001-line-story",
+      "name": "线稿故事（Line Story）",
+      "version": "0.2.3",
+      "orientation": "16:9",
+      "resolution": "1920x1080",
+      "fps": 30,
+      "durationSec": 30,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/0109010001-line-story",
+        "downloads": null
+      },
+      "license": "mg-commercial（成片可商用；模板本身不可再分发）",
+      "evidence": {
+        "level": "video",
+        "frames": null,
+        "deterministic": true
+      },
+      "doc": "docs/line-story.md",
+      "notes": "暗底金线逐笔生长＋旁白驱动分幕；场景数量与顺序跟随内容，默认 30s 为样例（普通人的一天），加幕加旁白即变长；单人统一旁白音色；2026-11-24 过审上线，预览已换为宣传片（不升版不换包）；下载量未采集",
+      "code": "0109010001",
+      "contentType": "full-template"
+    },
+    {
+      "id": "0110010001-particle-arrow-illusion",
+      "name": "3D粒子_逆转乾坤",
+      "version": "0.1.0",
+      "orientation": "9:16",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "durationSec": 15,
+      "route": "html-canvas",
+      "source": "personal-original",
+      "status": "published",
+      "publish": {
+        "platform": "MotionGit",
+        "state": "已发布",
+        "url": "https://motiongit.com/@fangcs/0110010001-particle-arrow-illusion",
+        "downloads": null
+      },
+      "license": "mg-commercial（成片可商用；模板本身不可再分发）",
+      "evidence": {
+        "level": "video",
+        "frames": 450,
+        "deterministic": true
+      },
+      "doc": "docs/particle-arrow-illusion.md",
+      "notes": "双稳态旋转错觉（暗底亮粒子、无光照无阴影无景深），移动视线焦点即逆转；固定 15s、约 5s 一圈、首尾帧相同可无缝循环；4 参数（title≤14/subtitle≤16/color/shape），arrow 与 rings 为预置方案，模板具备即时设计与推荐；无音轨；2026-11-24 过审上线；下载量未采集",
+      "code": "0110010001",
+      "contentType": "full-template"
     }
   ]
 }

@@ -36,6 +36,18 @@
 | `0202010001` | 点阵肖像（DotMatrix Portrait） | `dotmatrix-portrait-v1` | 成片参照 | 16:9 | 13 s（8–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/dotmatrix-portrait-v1)，v1.5.0，下载 119） | MIT | [docs/dotmatrix-portrait.md](docs/dotmatrix-portrait.md) |
 | `0201010001` | 暗场极客知识口播 | `geek-dark-talk-v1` | 成片参照 | 16:9 | 4 min 29 s（默认样例，按时长伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/geek-dark-talk-v1)，v1.3.1，下载 21） | MIT | [docs/geek-dark-talk.md](docs/geek-dark-talk.md) |
 | `0203010001` | 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)，v1.3.1，下载 4） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
+| `0109010001` | 线稿故事（Line Story） | `0109010001-line-story` | 原创 | 16:9 | 30 s（默认，按内容伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0109010001-line-story)，v0.2.3，2026-11-24 过审） | mg-commercial | 暗底金线逐笔生长＋旁白驱动分幕，内容有多少画多少；见 [docs/line-story.md](docs/line-story.md) |
+| `0110010001` | 3D粒子_逆转乾坤 | `0110010001-particle-arrow-illusion` | 原创 | 9:16 | 15 s（固定，无缝循环） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0110010001-particle-arrow-illusion)，v0.1.0，2026-11-24 过审） | mg-commercial | 双稳态旋转错觉：移动视线焦点即逆转；即时设计与推荐，arrow/rings 仅为预置方案；见 [docs/particle-arrow-illusion.md](docs/particle-arrow-illusion.md) |
+
+### 新上架预览
+
+线稿故事（v0.2.3，样例帧「一碗面，也画得出热气」）：
+
+![线稿故事](docs/assets/preview-line-story.jpg)
+
+3D粒子_逆转乾坤（v0.1.0，双环互扣预置）：
+
+![3D粒子_逆转乾坤](docs/assets/preview-particle-arrow.jpg)
 
 ### 动效片段（motion-fragment）
 
@@ -88,9 +100,13 @@
 ├── catalog.json           机器可读索引（与上方表格同源）
 ├── docs/
 │   ├── assets/
-│   │   └── preview-title.jpg     点阵肖像结尾标题帧（公开预览）
+│   │   ├── preview-title.jpg          点阵肖像结尾标题帧（公开预览）
+│   │   ├── preview-line-story.jpg     线稿故事样例帧
+│   │   └── preview-particle-arrow.jpg 3D粒子_逆转乾坤（双环互扣预置）
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议
 │   ├── geek-dark-talk.md        暗场极客知识口播：参数表、角色映射、渲染命令
+│   ├── line-story.md            线稿故事：分幕结构、可改内容、限制
+│   ├── particle-arrow-illusion.md 3D粒子_逆转乾坤：参数、错觉条件、限制
 │   ├── light-ribbon-word.md     光带成字：契约还原范围与已知差距
 │   ├── seaside-portrait.md      海边电影感·竖屏
 │   ├── board-writing-english.md 板书讲解·英语句式
@@ -103,7 +119,7 @@
 ## 许可与合规
 
 - 仓库内文档与索引：**MIT**
-- 各模板许可以该模板 `motion.json` / MotionGit 页面声明为准（点阵肖像为 MIT）
+- 各模板许可以该模板 `motion.json` / MotionGit 页面声明为准：点阵肖像与四支动效片段为 MIT；线稿故事与 3D粒子_逆转乾坤为 mg-commercial（成片可商用、模板本身不可再分发，平台侧对源码开放下载）
 - 本仓库不含任何账号凭据、密钥、个人下载层包体与绝对路径
 
 ## 联系

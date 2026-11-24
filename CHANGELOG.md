@@ -1,5 +1,14 @@
 # 变更记录
 
+## 2026-11-24
+
+- **登记 2 支新上架完整模板（同日过审）**：`0109010001-line-story`（线稿故事 v0.2.3，16:9，默认 30s，mg-commercial）与 `0110010001-particle-arrow-illusion`（3D粒子_逆转乾坤 v0.1.0，9:16，固定 15s 无缝循环，mg-commercial）两条 `published` 条目，各带独立说明页 `docs/line-story.md`、`docs/particle-arrow-illusion.md`。两作品页匿名 HEAD 均 200，实名口径沿用 `@fangcs` 形式。
+- **许可口径如实标注**：两支为 **mg-commercial**（成片可商用、模板本身不可再分发），与既有 MIT 条目不同；README「许可与合规」已按模板分别说明，平台侧对源码开放下载的情形一并写明。
+- **公开预览新增两张**：`docs/assets/preview-line-story.jpg`（线稿故事样例帧「一碗面，也画得出热气」）、`docs/assets/preview-particle-arrow.jpg`（3D粒子 rings 预置帧）；README「模板一览」下新增「新上架预览」小节。
+- **卖点口径（用户拍板）**：3D粒子条目的卖点写为**即时设计与推荐**，`arrow`/`rings` 明确降级为**预置方案**，不写成「图形二选一」。
+- 线稿故事预览已于同日替换为宣传片（平台侧 P2 直传，不升版不换包），条目 notes 已记。
+- counts：total 11→13，`published` 7→9，`publicDownloadable` 7→9；`generatedAt` 2026-11-24。下载量两支均未采集，不填估算值。
+
 ## 2026-11-21
 
 - **采集 30 天作品数据并把片段下载量补齐**（来源：作者后台 `/dashboard/insights`，登录态，2026-11-21）：卡通涂鸦片头 33 下载 / 184 访问、水墨书法标题卡 35 / 172、竖排姓名身份卡 34 / 174、片尾关注卡 28 / 166；三支完整模板同期 30 天为点阵肖像 171 / 623、暗场极客 78 / 326、3D粒子 48 / 196。`catalog.json` 全部加 `analytics30d` 字段（window / asOf / downloads / pageViews / source），README 片段表补窗口口径注：**30 天 ≠ 累计，不可与作品页计数混用**。
