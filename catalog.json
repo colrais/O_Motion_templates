@@ -260,7 +260,7 @@
     {
       "id": "ink-brush-title",
       "name": "水墨书法标题卡（Ink Brush Title）",
-      "version": "1.0.2",
+      "version": "1.0.4",
       "orientation": "16:9",
       "resolution": "1920x1080",
       "fps": 30,
@@ -330,7 +330,7 @@
     {
       "id": "end-card-cta",
       "name": "片尾关注卡（End Card CTA）",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "orientation": "1:1",
       "resolution": "1080x1080",
       "fps": 30,
