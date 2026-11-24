@@ -9,6 +9,9 @@ import json, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog.json"
 
+# 封面与缩略图走 jsDelivr 的 GitHub 镜像（国内访问比 github.io 快，且自动缓存）
+CDN = "https://cdn.jsdelivr.net/gh/colrais/O_Motion_templates@main/"
+
 # 只有已上线的 9 支进卡片墙；slug 用于平台链接
 META = {
     "0110010001-particle-arrow-illusion": dict(
@@ -47,7 +50,9 @@ PAGE = """<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>O.motion · 模板合集</title>
 <meta name="description" content="自制 MotionGit 模板合集：9 支已上线，封面一张图说清它长什么样、能改什么。">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+__PRELOAD__
 </head>
 <body>
 <header class="top">
@@ -108,11 +113,21 @@ const count = document.getElementById("count");
 const empty = document.getElementById("empty");
 let kind = "all", ratio = "all";
 
-function card(t){
+const CDN = "__CDN__";
+
+function card(t, i){
   const spec = [t.orientation, t.duration ? t.duration : "", t.fps ? t.fps + " FPS" : "", "v" + t.version]
     .filter(Boolean).join(" · ");
+  const t640 = CDN + "docs/assets/thumb/" + t.thumb + "-640.webp";
+  const t960 = CDN + "docs/assets/thumb/" + t.thumb + "-960.webp";
+  const full = CDN + "docs/assets/" + t.cover;
+  const prio = i < 3;
   return `<article class="card" data-kind="${t.kind}" data-ratio="${t.orientation}" data-q="${t.search}">
-    <div class="media"><img src="docs/assets/${t.cover}" alt="${t.name} 封面" decoding="async"><span class="badge">已上线</span></div>
+    <div class="media"><img src="${t640}" srcset="${t640} 640w, ${t960} 960w, ${full} 1280w"
+      sizes="(min-width:1160px) 420px, (min-width:680px) 45vw, 90vw" width="640" height="360"
+      loading="${prio ? "eager" : "lazy"}" fetchpriority="${prio ? "high" : "low"}" decoding="async"
+      onerror="this.onerror=null;this.removeAttribute('srcset');this.src='docs/assets/${t.cover}'"
+      alt="${t.name} 封面"><span class="badge">已上线</span></div>
     <div class="body">
       <p class="meta"><span class="kind">${t.kind}</span><span class="code">${t.code}</span></p>
       <h2>${t.name}</h2>
@@ -173,13 +188,23 @@ def main():
             code=t["code"], name=t["name"].split("（")[0], version=t["version"],
             orientation=t["orientation"], duration=dur_s, fps=t.get("fps"),
             kind=m["kind"], slug=m["slug"], cover=m["cover"], line=m["line"],
+            thumb=m["cover"].replace("cover-", "").replace(".jpg", ""),
             doc=t.get("doc") or "",
             search=" ".join([t["name"], t["code"], m["line"], m["kind"]]).lower(),
         ))
 
     full = sum(1 for r in rows if r["kind"] == "完整模板")
     frag = len(rows) - full
-    body = (PAGE.replace("__PUB__", str(len(rows)))
+    # 首屏前 3 张缩略图预加载（封面走 jsDelivr 镜像，减少国内访问 github.io 的等待）
+    pre = "\n".join(
+        f'<link rel="preload" as="image" href="{CDN}docs/assets/thumb/{r["thumb"]}-640.webp" '
+        f'imagesrcset="{CDN}docs/assets/thumb/{r["thumb"]}-640.webp 640w, '
+        f'{CDN}docs/assets/thumb/{r["thumb"]}-960.webp 960w" '
+        f'imagesizes="(min-width:1160px) 420px, (min-width:680px) 45vw, 90vw">'
+        for r in rows[:3])
+    body = (PAGE.replace("__CDN__", CDN)
+                .replace("__PRELOAD__", pre)
+                .replace("__PUB__", str(len(rows)))
                 .replace("__TOTAL__", str(len(all_items)))
                 .replace("__FULL__", str(full))
                 .replace("__FRAG__", str(frag))
@@ -191,4 +216,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
