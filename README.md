@@ -14,6 +14,10 @@
 <td width="33%" align="center"><a href="https://motiongit.com/@fangcs/name-plaque-card"><img src="docs/assets/cover-namecard.jpg" width="100%"></a><br><b>竖排姓名身份卡</b><br><sub>9:16 · 3s · 黑金/玉白/素白</sub></td>
 <td width="33%" align="center"><a href="https://motiongit.com/@fangcs/end-card-cta"><img src="docs/assets/cover-endcard.jpg" width="100%"></a><br><b>片尾关注卡</b><br><sub>1:1 · 3s · 图标文案皆可换</sub></td>
 </tr>
+<tr>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/0109020001-letter-story"><img src="docs/assets/cover-linestoryv.jpg" width="100%"></a><br><b>线稿故事（竖屏）</b><br><sub>9:16 · 15–48s · 一根金线画完</sub></td>
+<td width="33%" align="center"><a href="https://motiongit.com/@fangcs/0111010001-album-beat"><img src="docs/assets/cover-albumbeat.jpg" width="100%"></a><br><b>手机相册卡点</b><br><sub>4:5 · 13–22s · 相册节拍卡点</sub></td>
+</tr>
 </table>
 
 > **封面规范**：非 16:9 的模板不再用成片截图直接当封面（竖图在模板中心卡片里会被裁切、变形）。对外封面统一 **1920×1080**：横向排 3 个 2.5D 屏/卡（中间正面主屏 + 左右后景侧屏，投影制造纵深），左侧放标题、一句话卖点与参数标签——一张图说清「它长什么样、能改什么」。
@@ -67,6 +71,8 @@
 | `0203010001` | 3D粒子形变 | `particle-form-morph-v1` | 成片参照 | 16:9 | 18 s（默认，6–30 s 可调） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/particle-form-morph-v1)，v1.3.1，下载 4） | MIT | 八个三维粒子形状连续形变；原身份含旧来源词，已下架并以此新身份重发 |
 | `0109010001` | 线稿故事（Line Story） | `0109010001-line-story` | 原创 | 16:9 | 30 s（默认，按内容伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0109010001-line-story)，v0.2.3，2026-11-24 过审） | mg-commercial | 暗底金线逐笔生长＋旁白驱动分幕，内容有多少画多少；见 [docs/line-story.md](docs/line-story.md) |
 | `0110010001` | 3D粒子_逆转乾坤 | `0110010001-particle-arrow-illusion` | 原创 | 9:16 | 15 s（固定，无缝循环） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0110010001-particle-arrow-illusion)，v0.1.0，2026-11-24 过审） | mg-commercial | 双稳态旋转错觉：移动视线焦点即逆转；即时设计与推荐，arrow/rings 仅为预置方案；见 [docs/particle-arrow-illusion.md](docs/particle-arrow-illusion.md) |
+| `0109020001` | 线稿故事（竖屏） | `0109020001-letter-story` | 原创 | 9:16 | 30 s（默认，15–48 s 按内容伸缩） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0109020001-letter-story)，v0.2.0，2026-11-27 过审） | mg-commercial | 竖屏版线稿故事：金线暗底逐笔生长，幕数与时长随内容编排；见资产仓 `0109020001_线稿故事（竖屏）/docs/store-readme.md` |
+| `0111010001` | 手机相册卡点 | `0111010001-album-beat` | 原创 | 4:5（1080×1350） | 15.75 s（默认，13.25–22.25 s range） | 已发布（MotionGit，[作品页](https://motiongit.com/@fangcs/0111010001-album-beat)，v0.1.3，2026-11-26 上线） | mg-personal | 实体手机纵深俯冲开场、照片拼贴墙、每半秒一拍；自带 BGM，换照片即出片 |
 
 ### 动效片段（motion-fragment）
 
@@ -132,6 +138,8 @@
 │   │   ├── cover-linestory.jpg        线稿故事 16:9 封面
 │   │   ├── cover-inkbrush.jpg         水墨书法标题卡 16:9 封面
 │   │   ├── cover-cartoon.jpg          卡通涂鸦片头 16:9 封面
+│   │   ├── cover-linestoryv.jpg       线稿故事（竖屏）1920×1080 封面
+│   │   ├── cover-albumbeat.jpg        手机相册卡点 1920×1080 封面
 │   │   ├── preview-title.jpg          点阵肖像结尾标题帧
 │   │   └── preview-line-story.jpg     线稿故事样例帧
 │   ├── dotmatrix-portrait.md    点阵肖像：参数表、时间轴、使用建议
